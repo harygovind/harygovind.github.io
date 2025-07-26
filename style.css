@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
 
+.page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* FINAL COLOR PALETTE:
   --primary-color: #9333ea (Vibrant Purple)
   --background-color: #0a0a10 (Dark Charcoal)
@@ -19,7 +24,6 @@
 }
 
 html {
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -32,7 +36,6 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
 }
 
 .container {
@@ -106,7 +109,6 @@ a:hover {
     align-items: center;
     text-align: center;
     margin-bottom: 2rem;
-    overflow-x: hidden;
 }
 
 .hero h1 {
