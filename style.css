@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
 
-/* Removed unused .page-wrapper class */
-
 /* FINAL COLOR PALETTE:
   --primary-color: #9333ea (Vibrant Purple)
   --background-color: #0a0a10 (Dark Charcoal)
@@ -416,12 +414,27 @@ a:hover {
     .social-icon {
         font-size: 1.6rem;
     }
-
-    /* Single mobile tooltip style for all skills */
+    
+    /* Default mobile tooltip style */
     .skills-container span::after {
         white-space: normal;
         text-align: center;
         word-wrap: break-word;
         width: 180px;
+    }
+
+    /* Mobile tooltip alignment for Network Testing */
+    .skills-container .skill-network::after {
+        left: 0;
+        transform: translateX(0);
+        text-align: left;
+    }
+
+    /* Mobile tooltip alignment for API Testing */
+    .skills-container .skill-api::after {
+        left: auto;
+        right: 0;
+        transform: translateX(0);
+        text-align: right;
     }
 }
